@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--
+      JavaScript 6th Edition
+      Chapter 1
+      Chapter case
+
+      Helicopter Photos
+      Author: Casey Olson	
+      Date: 1/23/16  
+
+      Filename: contact.html
+   -->
+<head>
+	<title>Contact</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	</script>
+	<![endif]-->
+	<script src="modernizr.custom.05819.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Contact</h1>
+		</header>
+		
+<!-- navbar code -->
+		<nav>
+			<a href="index.html"/>Home</a> &nbsp&nbsp&nbsp&nbsp
+			<a href="about.html"/>About</a> &nbsp&nbsp&nbsp&nbsp
+			<a href="photos.html"/>Photo Slideshow</a> &nbsp&nbsp&nbsp&nbsp
+			<a href="videos.html"/>Videos</a> &nbsp&nbsp&nbsp&nbsp
+			<a href="contact.html"/>Contact</a> 
+		</nav>
+		
+			<main>
+				
+				<p>Want to contact me so I maybe a capture an ariel photo of your liking? Contact me via the form below.</p>
+					<div class="form"/>
+	<article>
+      <form>
+        <fieldset id="contactinfo">
+          <label for="nameinput">
+            Name
+            <input type="text" id="nameinput" name="name" />
+          </label>
+          <label for="emailinput">
+            Email
+            <input type="text" id="emailinput" name="email" />
+          </label>
+          <label for="messageinput">
+            Message
+            <input type="text" id="messageinput" name="message" />
+          </label>
+        </fieldset>
+        <fieldset id="submitbutton">
+          <input type="button" id="submit" value="Submit" />
+        </fieldset>
+     </form>
+   </article>
+					</div>
+					   <script>
+      function submitInfo() {
+         var name = document.getElementById("nameinput");
+         var email = document.getElementById("emailinput");
+         var phone = document.getElementById("messageinput");
+         (name.value && email.value && message.value) ? alert("Thank you!") : alert("Please fill in all fields");
+      }
+      document.getElementById("submit").addEventListener("click", submitInfo, false);
+   </script>
+					</div>
+			</main>
+			
+<!--copyright footer info-->		
+		<footer>
+			Copyright &copy; 2016 Helography<br/>
+		</footer>
+	</div>
+</body>
+</html>

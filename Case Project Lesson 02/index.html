@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 1
+      Chapter case
+
+      Helicopter Photos
+      Author: Casey Olson	
+      Date: 1/23/16  
+
+      Filename: index.html
+   -->
+	<title>Helicopter Photography</title>   
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	</script>
+	<![endif]-->
+    <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+	
+		<header>
+			<h1>Helicopter Photos</h1>
+		</header>
+<!-- navbar code -->
+		<nav>
+			<a href="index.html"/>Home</a> &nbsp&nbsp&nbsp&nbsp
+			<a href="about.html"/>About</a> &nbsp&nbsp&nbsp&nbsp
+			<a href="photos.html"/>Photo Slideshow</a> &nbsp&nbsp&nbsp&nbsp
+			<a href="videos.html"/>Videos</a> &nbsp&nbsp&nbsp&nbsp
+			<a href="contact.html"/>Contact</a> 
+		</nav>
+	
+		<main>
+			<p>I really enjoy nature photography and I think arial nature shots from helicopters turn out beautifully.</p>
+<!-- photo preview -->
+			<div id="image">
+				<img class="image" src="indexphoto.jpg" alt="photo 1" width="500px"/></a>
+			</div>
+		</main>
+		
+<!--converter title-->	
+	
+		  <h2>Fahrenheit (&#176; F) to Celsius (&#176; C) converter</h2>
+      <form>
+          <fieldset>
+<!--description of what to enter into box for conversion-->          
+            <label for="fValue">
+              Enter temp in &#176; F
+            </label>
+<!--input box-->            
+            <input type="number" id="fValue" />
+          </fieldset>
+          <fieldset>
+<!-- conversion button-->          
+            <button type="button" id="button">Convert to &#176; C</button>
+          </fieldset>
+          <fieldset>
+<!-- label showing it's converting into Celsius-->          
+             <p>Equivalent temp in &#176; C</p>
+<!-- where the calculated Celsius value will appear -->             
+            <p id="cValue">&nbsp;</p>
+          </fieldset>
+     </form>
+   </article>
+
+   <script> 
+/* this function converts the Fahrenheit value you enter into Celsius */      
+      function convert() {
+         var degF = document.getElementById("fValue").value;
+         var degC = (degF - 32) * (5 / 9);
+         document.getElementById("cValue").innerHTML = degC;
+      }
+/* this event listener is telling it render the output once the button is clicked */
+      
+      document.getElementById("button").addEventListener("click", convert, false);
+   </script>
+
+<!--copyright footer info-->		
+		<footer>
+			Copyright &copy; 2016 Helography<br/>
+		</footer>
+	</div>
+</body>
+</html>

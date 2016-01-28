@@ -1,0 +1,104 @@
+/*
+
+helography
+
+Author: Casey Olson
+
+Date: 1/25/16
+
+*/
+
+body {
+	color: #000000;
+    background-color: #bec0d0;
+    font-family: tahoma; 
+}
+    		
+header { 
+	color: #454444;
+	background-color: #989e9e;
+	text-align: center; 
+}
+			
+h1 { 
+	background-image: url(hpheader.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 215px;
+	margin: 0; 		
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden; 
+}		
+
+nav { 
+	text-align: center; 
+	background-color: #efd96a;
+	padding-bottom: 15px; 
+	padding-top: 10px;
+}
+
+nav a { 
+	text-decoration: none;
+}
+
+nav a:link { color: #111427; }
+nav a:visited { color: #111427; }
+nav a:hover { color: #111427; }
+		
+
+main { 
+	padding: 20px;
+	text-align: center;
+}
+		
+img { 
+	border-style: solid;
+	border-color: #111427;
+}
+
+#image { 
+	text-align: center;
+	margin-top: 1em; 
+}
+			
+		
+#wrapper { 
+	margin-left: auto;
+	margin-right: auto;
+	width:960px; 
+	background-color: #ffffff;
+	box-shadow: 5px 5px 5px #828282; 
+}
+
+.form { 
+	width: 600px;
+	margin: auto;
+	text-align: left;
+}
+
+input, text area {
+	display: block;
+	margin-bottom: 1em;
+}
+
+
+#mySubmit { margin-left: 12em; }
+            
+footer { 
+	color: #111427;
+	background-color: #efd96a;
+	font-style: bold;
+	font-size: .8em;
+	text-align: center;
+	padding: 20px 0 20px 0;
+	clear: both; 
+}
+			
+footer a:link { color: #b0b9bc; }
+footer a:visited { color: #b0b9bc; }
+footer a:hover { color: #f7f5f2; }
+
+header, nav, main, footer { display: block; }
+
+  
